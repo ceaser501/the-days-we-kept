@@ -6,29 +6,33 @@
     <meta name="description" content="Memories captured." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- ✅ GitHub Pages에서는 절대경로 사용 -->
-    <link rel="stylesheet" href="/the-days-we-kept/css/vendor.css" />
-    <link rel="stylesheet" href="/the-days-we-kept/css/style.css" />
-    <link rel="icon" href="/the-days-we-kept/images/favicon.png" />
+    <!-- IMPORTANT: base path for GitHub Pages -->
+    <base href="/the-days-we-kept/" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" />
   </head>
 
   <body>
+    <!-- Preloader -->
     <div class="loader-wrapper">
       <div class="loader"></div>
     </div>
 
+    <!-- Main Content -->
     <main class="main-wrap">
+      <!-- Header -->
       <header class="site-header">
         <div class="container">
           <div class="row justify-content-between align-items-center">
             <div class="col-md-3 col-6">
               <div class="site-branding">
                 <a href="#home" class="custom-logo-link">
-                  <img
-                    src="/the-days-we-kept/images/logo.png"
-                    class="custom-logo"
-                    alt="logo"
-                  />
+                  <img src="images/logo.png" class="custom-logo" alt="logo" />
                 </a>
               </div>
             </div>
@@ -52,6 +56,7 @@
         </div>
       </header>
 
+      <!-- Sections -->
       <section id="home" class="hero-section">
         <div class="container text-center">
           <h1>The Days We Kept</h1>
@@ -89,14 +94,15 @@
         </div>
       </section>
 
+      <!-- Footer -->
       <footer class="site-footer text-center">
         <p>© 2025 The Days We Kept</p>
       </footer>
     </main>
 
-    <!-- ✅ JS 경로도 절대경로로 고정 -->
-    <script src="/the-days-we-kept/js/jquery-1.11.0.min.js"></script>
-    <script src="/the-days-we-kept/js/plugins.js"></script>
-    <script src="/the-days-we-kept/js/script.js"></script>
+    <!-- JS -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
