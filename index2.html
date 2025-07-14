@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polaroid Heart</title>
+    <style>
+      body {
+        background: #fff;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .heart-wall {
+        display: grid;
+        grid-template-columns: repeat(9, 120px);
+        grid-auto-rows: 140px;
+        gap: 10px;
+      }
+
+      .polaroid {
+        width: 100px;
+        height: 120px;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 4px;
+      }
+
+      .polaroid img {
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      /* 하트 모양 배치 (grid-area로 빈 칸 조절) */
+      .heart-wall > div {
+        visibility: hidden;
+      }
+
+      .heart-wall > .polaroid {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heart-wall">
+      <!-- 첫 줄 (3개) -->
+      <div></div>
+      <div></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+
+      <!-- 둘째 줄 (5개) -->
+      <div></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div></div>
+      <div></div>
+
+      <!-- 셋째 줄 (7개) -->
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div></div>
+      <div></div>
+
+      <!-- 넷째 줄 (5개) -->
+      <div></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div></div>
+      <div></div>
+
+      <!-- 다섯째 줄 (3개) -->
+      <div></div>
+      <div></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+
+      <!-- 여섯째 줄 (1개) -->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div class="polaroid"><img src="your-photo.jpg" /></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
